@@ -43,4 +43,8 @@
     }];
 }
 
+- (IBAction)reconnect:(id)sender
+{
+	[_client reconnect];
+}
 @end
