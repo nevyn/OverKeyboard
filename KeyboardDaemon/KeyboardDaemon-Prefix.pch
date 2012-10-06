@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'KeyboardDaemon' target in the 'KeyboardDaemon' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif

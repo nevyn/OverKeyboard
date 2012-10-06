@@ -1,0 +1,534 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		05715B9D161FBB580023B321 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05715B9C161FBB580023B321 /* Cocoa.framework */; };
+		05715BA7161FBB590023B321 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 05715BA5161FBB590023B321 /* InfoPlist.strings */; };
+		05715BA9161FBB590023B321 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 05715BA8161FBB590023B321 /* main.m */; };
+		05715BAD161FBB590023B321 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 05715BAB161FBB590023B321 /* Credits.rtf */; };
+		05715BB0161FBB590023B321 /* TCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 05715BAF161FBB590023B321 /* TCAppDelegate.m */; };
+		05715BB3161FBB590023B321 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05715BB1161FBB590023B321 /* MainMenu.xib */; };
+		05715BBD161FBB8A0023B321 /* NSString+UUID.m in Sources */ = {isa = PBXBuildFile; fileRef = 05715BBA161FBB8A0023B321 /* NSString+UUID.m */; };
+		05715BBE161FBB8A0023B321 /* TCAsyncHashProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 05715BBC161FBB8A0023B321 /* TCAsyncHashProtocol.m */; };
+		05715BC4161FBBE80023B321 /* AsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 05715BC3161FBBE80023B321 /* AsyncSocket.m */; };
+		05715BCF161FC0300023B321 /* TCAHPSimpleServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 05715BCE161FC0300023B321 /* TCAHPSimpleServer.m */; };
+		05715BDB161FC2AE0023B321 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05715BDA161FC2AE0023B321 /* UIKit.framework */; };
+		05715BDD161FC2AE0023B321 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05715BDC161FC2AE0023B321 /* Foundation.framework */; };
+		05715BDF161FC2AE0023B321 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05715BDE161FC2AE0023B321 /* CoreGraphics.framework */; };
+		05715BE5161FC2AE0023B321 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 05715BE3161FC2AE0023B321 /* InfoPlist.strings */; };
+		05715BE7161FC2AE0023B321 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 05715BE6161FC2AE0023B321 /* main.m */; };
+		05715BEB161FC2AE0023B321 /* TCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 05715BEA161FC2AE0023B321 /* TCAppDelegate.m */; };
+		05715BED161FC2AE0023B321 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 05715BEC161FC2AE0023B321 /* Default.png */; };
+		05715BEF161FC2AE0023B321 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 05715BEE161FC2AE0023B321 /* Default@2x.png */; };
+		05715BF1161FC2AE0023B321 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 05715BF0161FC2AE0023B321 /* Default-568h@2x.png */; };
+		05715BF4161FC2AE0023B321 /* TCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05715BF3161FC2AE0023B321 /* TCViewController.m */; };
+		05715BF7161FC2AE0023B321 /* TCViewController~iphone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05715BF5161FC2AE0023B321 /* TCViewController~iphone.xib */; };
+		05715BFA161FC2AE0023B321 /* TCViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05715BF8161FC2AE0023B321 /* TCViewController~ipad.xib */; };
+		05715C03161FC6150023B321 /* TCAHPSimpleClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 05715C02161FC6150023B321 /* TCAHPSimpleClient.m */; };
+		05715C04161FC61D0023B321 /* NSString+UUID.m in Sources */ = {isa = PBXBuildFile; fileRef = 05715BBA161FBB8A0023B321 /* NSString+UUID.m */; };
+		05715C05161FC61D0023B321 /* TCAsyncHashProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 05715BBC161FBB8A0023B321 /* TCAsyncHashProtocol.m */; };
+		05715C06161FC61D0023B321 /* AsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 05715BC3161FBBE80023B321 /* AsyncSocket.m */; };
+		05715C0E161FC68B0023B321 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05715C0D161FC68B0023B321 /* CFNetwork.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		05715B98161FBB580023B321 /* KeyboardDaemon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeyboardDaemon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		05715B9C161FBB580023B321 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		05715B9F161FBB580023B321 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		05715BA0161FBB580023B321 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		05715BA1161FBB580023B321 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		05715BA4161FBB590023B321 /* KeyboardDaemon-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KeyboardDaemon-Info.plist"; sourceTree = "<group>"; };
+		05715BA6161FBB590023B321 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		05715BA8161FBB590023B321 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		05715BAA161FBB590023B321 /* KeyboardDaemon-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KeyboardDaemon-Prefix.pch"; sourceTree = "<group>"; };
+		05715BAC161FBB590023B321 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		05715BAE161FBB590023B321 /* TCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCAppDelegate.h; sourceTree = "<group>"; };
+		05715BAF161FBB590023B321 /* TCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCAppDelegate.m; sourceTree = "<group>"; };
+		05715BB2161FBB590023B321 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		05715BB9161FBB8A0023B321 /* NSString+UUID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+UUID.h"; path = "Libraries/TCAsyncHashProtocol/NSString+UUID.h"; sourceTree = SOURCE_ROOT; };
+		05715BBA161FBB8A0023B321 /* NSString+UUID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+UUID.m"; path = "Libraries/TCAsyncHashProtocol/NSString+UUID.m"; sourceTree = SOURCE_ROOT; };
+		05715BBB161FBB8A0023B321 /* TCAsyncHashProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TCAsyncHashProtocol.h; path = Libraries/TCAsyncHashProtocol/TCAsyncHashProtocol.h; sourceTree = SOURCE_ROOT; };
+		05715BBC161FBB8A0023B321 /* TCAsyncHashProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TCAsyncHashProtocol.m; path = Libraries/TCAsyncHashProtocol/TCAsyncHashProtocol.m; sourceTree = SOURCE_ROOT; };
+		05715BC2161FBBE80023B321 /* AsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AsyncSocket.h; path = Libraries/AsyncSocket/RunLoop/AsyncSocket.h; sourceTree = SOURCE_ROOT; };
+		05715BC3161FBBE80023B321 /* AsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AsyncSocket.m; path = Libraries/AsyncSocket/RunLoop/AsyncSocket.m; sourceTree = SOURCE_ROOT; };
+		05715BCD161FC0300023B321 /* TCAHPSimpleServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TCAHPSimpleServer.h; path = Libraries/TCAsyncHashProtocol/TCAHPSimpleServer.h; sourceTree = SOURCE_ROOT; };
+		05715BCE161FC0300023B321 /* TCAHPSimpleServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TCAHPSimpleServer.m; path = Libraries/TCAsyncHashProtocol/TCAHPSimpleServer.m; sourceTree = SOURCE_ROOT; };
+		05715BD8161FC2AE0023B321 /* OverKeybard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OverKeybard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		05715BDA161FC2AE0023B321 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		05715BDC161FC2AE0023B321 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		05715BDE161FC2AE0023B321 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		05715BE2161FC2AE0023B321 /* OverKeybard-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OverKeybard-Info.plist"; sourceTree = "<group>"; };
+		05715BE4161FC2AE0023B321 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		05715BE6161FC2AE0023B321 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		05715BE8161FC2AE0023B321 /* OverKeybard-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OverKeybard-Prefix.pch"; sourceTree = "<group>"; };
+		05715BE9161FC2AE0023B321 /* TCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCAppDelegate.h; sourceTree = "<group>"; };
+		05715BEA161FC2AE0023B321 /* TCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCAppDelegate.m; sourceTree = "<group>"; };
+		05715BEC161FC2AE0023B321 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		05715BEE161FC2AE0023B321 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		05715BF0161FC2AE0023B321 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		05715BF2161FC2AE0023B321 /* TCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCViewController.h; sourceTree = "<group>"; };
+		05715BF3161FC2AE0023B321 /* TCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCViewController.m; sourceTree = "<group>"; };
+		05715BF6161FC2AE0023B321 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = "en.lproj/TCViewController~iphone.xib"; sourceTree = "<group>"; };
+		05715BF9161FC2AE0023B321 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = "en.lproj/TCViewController~ipad.xib"; sourceTree = "<group>"; };
+		05715C01161FC6150023B321 /* TCAHPSimpleClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TCAHPSimpleClient.h; path = Libraries/TCAsyncHashProtocol/TCAHPSimpleClient.h; sourceTree = SOURCE_ROOT; };
+		05715C02161FC6150023B321 /* TCAHPSimpleClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TCAHPSimpleClient.m; path = Libraries/TCAsyncHashProtocol/TCAHPSimpleClient.m; sourceTree = SOURCE_ROOT; };
+		05715C0D161FC68B0023B321 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		05715B95161FBB580023B321 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05715B9D161FBB580023B321 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05715BD5161FC2AE0023B321 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05715C0E161FC68B0023B321 /* CFNetwork.framework in Frameworks */,
+				05715BDB161FC2AE0023B321 /* UIKit.framework in Frameworks */,
+				05715BDD161FC2AE0023B321 /* Foundation.framework in Frameworks */,
+				05715BDF161FC2AE0023B321 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		05715B8D161FBB580023B321 = {
+			isa = PBXGroup;
+			children = (
+				05715BA2161FBB580023B321 /* KeyboardDaemon */,
+				05715BE0161FC2AE0023B321 /* OverKeybard */,
+				05715B9B161FBB580023B321 /* Frameworks */,
+				05715B99161FBB580023B321 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		05715B99161FBB580023B321 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				05715B98161FBB580023B321 /* KeyboardDaemon.app */,
+				05715BD8161FC2AE0023B321 /* OverKeybard.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		05715B9B161FBB580023B321 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				05715C0D161FC68B0023B321 /* CFNetwork.framework */,
+				05715B9C161FBB580023B321 /* Cocoa.framework */,
+				05715BDA161FC2AE0023B321 /* UIKit.framework */,
+				05715BDC161FC2AE0023B321 /* Foundation.framework */,
+				05715BDE161FC2AE0023B321 /* CoreGraphics.framework */,
+				05715B9E161FBB580023B321 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		05715B9E161FBB580023B321 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				05715B9F161FBB580023B321 /* AppKit.framework */,
+				05715BA0161FBB580023B321 /* CoreData.framework */,
+				05715BA1161FBB580023B321 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		05715BA2161FBB580023B321 /* KeyboardDaemon */ = {
+			isa = PBXGroup;
+			children = (
+				05715BAE161FBB590023B321 /* TCAppDelegate.h */,
+				05715BAF161FBB590023B321 /* TCAppDelegate.m */,
+				05715BB1161FBB590023B321 /* MainMenu.xib */,
+				05715BA3161FBB590023B321 /* Supporting Files */,
+			);
+			path = KeyboardDaemon;
+			sourceTree = "<group>";
+		};
+		05715BA3161FBB590023B321 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				05715BB9161FBB8A0023B321 /* NSString+UUID.h */,
+				05715BBA161FBB8A0023B321 /* NSString+UUID.m */,
+				05715BBB161FBB8A0023B321 /* TCAsyncHashProtocol.h */,
+				05715BBC161FBB8A0023B321 /* TCAsyncHashProtocol.m */,
+				05715BCD161FC0300023B321 /* TCAHPSimpleServer.h */,
+				05715BCE161FC0300023B321 /* TCAHPSimpleServer.m */,
+				05715C01161FC6150023B321 /* TCAHPSimpleClient.h */,
+				05715C02161FC6150023B321 /* TCAHPSimpleClient.m */,
+				05715BC2161FBBE80023B321 /* AsyncSocket.h */,
+				05715BC3161FBBE80023B321 /* AsyncSocket.m */,
+				05715BA4161FBB590023B321 /* KeyboardDaemon-Info.plist */,
+				05715BA5161FBB590023B321 /* InfoPlist.strings */,
+				05715BA8161FBB590023B321 /* main.m */,
+				05715BAA161FBB590023B321 /* KeyboardDaemon-Prefix.pch */,
+				05715BAB161FBB590023B321 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		05715BE0161FC2AE0023B321 /* OverKeybard */ = {
+			isa = PBXGroup;
+			children = (
+				05715BE9161FC2AE0023B321 /* TCAppDelegate.h */,
+				05715BEA161FC2AE0023B321 /* TCAppDelegate.m */,
+				05715BF2161FC2AE0023B321 /* TCViewController.h */,
+				05715BF3161FC2AE0023B321 /* TCViewController.m */,
+				05715BF5161FC2AE0023B321 /* TCViewController~iphone.xib */,
+				05715BF8161FC2AE0023B321 /* TCViewController~ipad.xib */,
+				05715BE1161FC2AE0023B321 /* Supporting Files */,
+			);
+			path = OverKeybard;
+			sourceTree = "<group>";
+		};
+		05715BE1161FC2AE0023B321 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				05715BE2161FC2AE0023B321 /* OverKeybard-Info.plist */,
+				05715BE3161FC2AE0023B321 /* InfoPlist.strings */,
+				05715BE6161FC2AE0023B321 /* main.m */,
+				05715BE8161FC2AE0023B321 /* OverKeybard-Prefix.pch */,
+				05715BEC161FC2AE0023B321 /* Default.png */,
+				05715BEE161FC2AE0023B321 /* Default@2x.png */,
+				05715BF0161FC2AE0023B321 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		05715B97161FBB580023B321 /* KeyboardDaemon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05715BB6161FBB590023B321 /* Build configuration list for PBXNativeTarget "KeyboardDaemon" */;
+			buildPhases = (
+				05715B94161FBB580023B321 /* Sources */,
+				05715B95161FBB580023B321 /* Frameworks */,
+				05715B96161FBB580023B321 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KeyboardDaemon;
+			productName = KeyboardDaemon;
+			productReference = 05715B98161FBB580023B321 /* KeyboardDaemon.app */;
+			productType = "com.apple.product-type.application";
+		};
+		05715BD7161FC2AE0023B321 /* OverKeybard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05715BFB161FC2AE0023B321 /* Build configuration list for PBXNativeTarget "OverKeybard" */;
+			buildPhases = (
+				05715BD4161FC2AE0023B321 /* Sources */,
+				05715BD5161FC2AE0023B321 /* Frameworks */,
+				05715BD6161FC2AE0023B321 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OverKeybard;
+			productName = OverKeybard;
+			productReference = 05715BD8161FC2AE0023B321 /* OverKeybard.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		05715B8F161FBB580023B321 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TC;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Joachim Bengtsson";
+			};
+			buildConfigurationList = 05715B92161FBB580023B321 /* Build configuration list for PBXProject "KeyboardDaemon" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 05715B8D161FBB580023B321;
+			productRefGroup = 05715B99161FBB580023B321 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				05715B97161FBB580023B321 /* KeyboardDaemon */,
+				05715BD7161FC2AE0023B321 /* OverKeybard */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		05715B96161FBB580023B321 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05715BA7161FBB590023B321 /* InfoPlist.strings in Resources */,
+				05715BAD161FBB590023B321 /* Credits.rtf in Resources */,
+				05715BB3161FBB590023B321 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05715BD6161FC2AE0023B321 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05715BE5161FC2AE0023B321 /* InfoPlist.strings in Resources */,
+				05715BED161FC2AE0023B321 /* Default.png in Resources */,
+				05715BEF161FC2AE0023B321 /* Default@2x.png in Resources */,
+				05715BF1161FC2AE0023B321 /* Default-568h@2x.png in Resources */,
+				05715BF7161FC2AE0023B321 /* TCViewController~iphone.xib in Resources */,
+				05715BFA161FC2AE0023B321 /* TCViewController~ipad.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		05715B94161FBB580023B321 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05715BA9161FBB590023B321 /* main.m in Sources */,
+				05715BB0161FBB590023B321 /* TCAppDelegate.m in Sources */,
+				05715BBD161FBB8A0023B321 /* NSString+UUID.m in Sources */,
+				05715BBE161FBB8A0023B321 /* TCAsyncHashProtocol.m in Sources */,
+				05715BC4161FBBE80023B321 /* AsyncSocket.m in Sources */,
+				05715BCF161FC0300023B321 /* TCAHPSimpleServer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05715BD4161FC2AE0023B321 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05715BE7161FC2AE0023B321 /* main.m in Sources */,
+				05715BEB161FC2AE0023B321 /* TCAppDelegate.m in Sources */,
+				05715BF4161FC2AE0023B321 /* TCViewController.m in Sources */,
+				05715C03161FC6150023B321 /* TCAHPSimpleClient.m in Sources */,
+				05715C04161FC61D0023B321 /* NSString+UUID.m in Sources */,
+				05715C05161FC61D0023B321 /* TCAsyncHashProtocol.m in Sources */,
+				05715C06161FC61D0023B321 /* AsyncSocket.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		05715BA5161FBB590023B321 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				05715BA6161FBB590023B321 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		05715BAB161FBB590023B321 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				05715BAC161FBB590023B321 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		05715BB1161FBB590023B321 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				05715BB2161FBB590023B321 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		05715BE3161FC2AE0023B321 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				05715BE4161FC2AE0023B321 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		05715BF5161FC2AE0023B321 /* TCViewController~iphone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				05715BF6161FC2AE0023B321 /* en */,
+			);
+			name = "TCViewController~iphone.xib";
+			sourceTree = "<group>";
+		};
+		05715BF8161FC2AE0023B321 /* TCViewController~ipad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				05715BF9161FC2AE0023B321 /* en */,
+			);
+			name = "TCViewController~ipad.xib";
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		05715BB4161FBB590023B321 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		05715BB5161FBB590023B321 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		05715BB7161FBB590023B321 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KeyboardDaemon/KeyboardDaemon-Prefix.pch";
+				INFOPLIST_FILE = "KeyboardDaemon/KeyboardDaemon-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		05715BB8161FBB590023B321 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KeyboardDaemon/KeyboardDaemon-Prefix.pch";
+				INFOPLIST_FILE = "KeyboardDaemon/KeyboardDaemon-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		05715BFC161FC2AE0023B321 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OverKeybard/OverKeybard-Prefix.pch";
+				INFOPLIST_FILE = "OverKeybard/OverKeybard-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		05715BFD161FC2AE0023B321 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OverKeybard/OverKeybard-Prefix.pch";
+				INFOPLIST_FILE = "OverKeybard/OverKeybard-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		05715B92161FBB580023B321 /* Build configuration list for PBXProject "KeyboardDaemon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05715BB4161FBB590023B321 /* Debug */,
+				05715BB5161FBB590023B321 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05715BB6161FBB590023B321 /* Build configuration list for PBXNativeTarget "KeyboardDaemon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05715BB7161FBB590023B321 /* Debug */,
+				05715BB8161FBB590023B321 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05715BFB161FC2AE0023B321 /* Build configuration list for PBXNativeTarget "OverKeybard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05715BFC161FC2AE0023B321 /* Debug */,
+				05715BFD161FC2AE0023B321 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 05715B8F161FBB580023B321 /* Project object */;
+}
